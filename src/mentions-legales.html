@@ -1,0 +1,58 @@
+---
+layout: default
+permalink: /mentions-legales/
+title: "Mentions légales"
+description: "Mentions légales"
+---
+
+<section class="mini-slider wow fadeIn" data-wow-duration="1s" data-wow-delay="0">
+    <div class='container'>
+        <div class='row'>
+            <div class='col-sm-12'>
+                <h1>Mentions légales</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class='one'>
+    <div class='container'>
+        <div id="mentions-legales">
+            <p>Ces informations concernent explicitement le site Internet <b>{{ site.data.company.name }}</b>.</p>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Propriétaire</h3>
+                </div>
+                <div class="panel-body">
+                    <h2>{{ site.data.company.owner }}</h2>
+                    <p>Société à responsabilité limitée au capital de {{ site.data.company.capital }} €,<br>
+                        Dont le siège social est établi {{ site.data.company.headOffice }}<br>
+                        Immatriculée au Registre du Commerce et des Sociétés sous le numéro RCS {{ site.data.company.rcs
+                        }}<br>
+                        Directeur de la publication {{ site.data.company.comDirector }}</p>
+                </div>
+            </div>
+            <br>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Éditeur</h3>
+                </div>
+                <div class="panel-body">
+                    <h2>BH Internet</h2>
+                    <p>Enseigne de ZegZel<br>
+                        Société à responsabilité limitée au capital de 6 000 €,<br>
+                        Dont le siège social est établi 48, boulevard des Coquibus 91000 Évry<br>
+                        Immatriculée au Registre du Commerce et des Sociétés sous le numéro RCS Evry B 749 951 604</p>
+                </div>
+            </div>
+            <br>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Hébergeur</h3>
+                </div>
+                <div class="panel-body">
+                    {{ site.data.company.gandi }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
