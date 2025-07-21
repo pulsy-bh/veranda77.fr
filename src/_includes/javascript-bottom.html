@@ -119,8 +119,6 @@
 </script>
 
 <script type="text/javascript">
-
-
   $(window).scroll(function () {
     if ($(document).scrollTop() > 350) {
       $(".backTotop").addClass('active1');
@@ -130,10 +128,8 @@
   });
 
   $('a[href^="#backTotop"]').click(function () {
-    var the_id = $(this).attr("href");
-
     $('html, body').animate({
-      scrollTop: $(the_id).offset().top
+      scrollTop: 0
     }, 'slow');
     return false;
   });
