@@ -9,4 +9,7 @@
 <url>
 <loc>http://localhost:4000/devis/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/nos-realisation/</loc>
+</url>
 </urlset>
