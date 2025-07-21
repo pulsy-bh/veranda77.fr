@@ -13,6 +13,9 @@
 <loc>http://localhost:4000/mentions-legales/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/message-envoye/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/nos-realisation/</loc>
 </url>
 <url>
