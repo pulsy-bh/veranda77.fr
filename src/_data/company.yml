@@ -1,71 +1,36 @@
 ####################
 # CONFIG
 ####################
-name: "Veranda 77"
-streetAddress: "Route de Fontainebleau"
-addressLocality: "Melun"
-addressRegion: "Ile-de-France"
-postalCode: "77000"
-addressCountry: "France"
-url: "https://www.veranda-77.com/"
-logo: "https://www.veranda-77.com/img/logo.jpg"
-image: "https://www.veranda-77.com/img/veranda_melun.jpg"
-description: "BAIES ET VERANDAS DE FRANCE"
-phone1: "01 85 53 89 76"
-phone2: ""
-phones:
-    - "01 85 53 89 76"
-address:
-    street: "Route de Fontainebleau"
-    city: "Melun"
-    postalCode: "77000"
-    geo:
-        latitude: ""
-        longitude: ""
-    openingHours: "Mo, Tu, We, Th, Fr 09:00-18:00"
-    contactPoint:
-        telephone: "01 85 53 89 76"
-        contactType: "téléphone"
-conf_name: "Veranda 77"
-conf_name_company: "BAIES ET VERANDAS DE FRANCE"
-conf_address: "Route de Fontainebleau"
-conf_address_headOffice: "2, rue du Camp Romain"
-conf_zipCode: "77000"
-conf_zipCode_headOffice: "91490"
-conf_city: "Melun"
-conf_city_headOffice: "Milly-la-Fôret"
-conf_googleMap: ""
+name: "veranda77.fr"
+address: "96 rue Bertaux"
+zipCode: "77610"
+city: "Fontenay-Trésigny"
+departement: "Seine-et-Marne"
+googleMap: "https://www.google.com/maps/place/42+Rue+Paul+Claudel,+91000+%C3%89vry,+France/@48.6376196,2.4291048,17z/data=!3m1!4b1!4m5!3m4!1s0x47e5de23ed21fdd1:0x568db99293527174!8m2!3d48.6376196!4d2.4312935"
 
-call_phone1: "01 85 53 89 76"
-conf_phone1: "0185538976"
+phone1: "01 85 53 80 98"
+phone2: "07 70 12 45 61"
+phone3: "06 43 05 72 22"
 
-conf_phone2: ""
-conf_fax: "01 00 00 00 00"
+id_company: 430
+name_website: "veranda77.fr"
+addressOnline: "http://www.veranda77.fr/"
+email: "antonio.navarro@wanadoo.fr"
+email_copie: "hind@bhgroupe.fr"
 
-conf_id_company: 430
-conf_name_website: "veranda-77.com"
-conf_addressOnline: "http://www.veranda-77.com/"
+email_formulaire1: "antonio.navarro@wanadoo.fr"
+email_formulaire2: null
 
-conf_email: "contact@veranda-77.com"
-email: "contact@veranda-77.com"
-conf_email_copie: "hedi@bhgroupe.fr;hind@bhgroupe.fr"
-
-# Formulaires
-conf_email_formulaire1: "contact@veranda-77.com"
-conf_email_formulaire2: null
-
-# Mentions Légales
-conf_owner: "BAIES ET VERANDAS DE FRANCE"
-conf_owner_siren: "751388919"
-conf_owner_headOffice: "2, rue du Camp Romain, Milly-la-Fôret (91490)"
-conf_capital: "20000"
-conf_rcs: "Paris B 123 456 789"
-conf_comDirector: "Prénom NOM"
+owner: "veranda77.fr"
+capital: "20000"
+headOffice: "96 rue Bertaux 77610 Fontenay-Trésigny" 
+rcs: "Meaux B 822 402 673"
+comDirector: "Antonio Navarro"
 ovh: "<h2>OVH</h2>Société par actions simplifiée au capital de 10 000 000 €,<br>Dont le siège social est établi 2, rue Kellermann 59100 Roubaix<br>Immatriculée au Registre du Commerce et des Sociétés sous le numéro RCS Tourcoing 424 761 419"
-gandi: "<h2>Gandi</h2>Société par actions simplifiée au capital 300 000 €,<br>Dont le siège social est établi 63 Boulevard Massena 75013 Paris<br>Immatriculée au Registre du Commerce et des Sociétés sous le numéro RCS Paris B 423 093 459"
-conf_hebergement: "gandi"
+gandi: "<h2>Gandi</h2><p>Société par actions simplifiée au capital 300 000 €,<br>Dont le siège social est établi 63 Boulevard Massena 75013 Paris<br>Immatriculée au Registre du Commerce et des Sociétés sous le numéro RCS Paris B 423 093 459</p>"
+hebergement: $gandi
 
-website: 227
+website: 
 
 recaptcha:
   client: 6LdQ4HsrAAAAAJKfIZ82Q35fmGg1hQdj16E6BN_h

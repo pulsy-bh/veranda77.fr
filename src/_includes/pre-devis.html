@@ -8,63 +8,39 @@
     <input type="hidden" name="firstName" value="" />
     <input type="hidden" name="condition" value="on" />
     <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}" />
-    <div class="row pad1">
-      <div class="col-sm-4">
-        <div class="form-group">
-          <label>Nom*</label>
-          <input required type="text" class="form-control" id="name" name="name" placeholder="Votre nom">
-        </div>
+    <div class="row pre-reservation">
+      <div class="col-md-2 col-sm-6 clabel">
+         <div class="padl form-group has-feedback">
+            <div class="user ico2"></div>
+            <input type="text" name="nom" class="form-control" placeholder="Nom" required>
+         </div>
       </div>
-
-      <div class="col-sm-4">
-        <div class="form-group">
-          <label>E-mail*</label>
-          <input required type="email" class="form-control" id="email" name="email" placeholder="Votre email">
-        </div>
+      <div class="col-md-2 col-sm-6 clabel">
+         <div class="padl form-group has-feedback">
+            <div class="email ico2"></div>
+            <input type="email" name="email" class="form-control" placeholder="Email" required>
+         </div>
       </div>
-
-      <div class="col-sm-4">
-        <div class="form-group">
-          <label>Téléphone*</label>
-          <input required type="tel" class="form-control" id="telephone" name="telephone" placeholder="Votre téléphone">
-        </div>
+      <div class="col-md-2 col-sm-6 clabel">
+         <div class="form-group has-feedback">
+            <div class="phone ico2"></div>
+            <input type="tel" name="telephone" class="form-control" placeholder="Tél" required>
+         </div>
       </div>
-
-      <div class="col-sm-4">
-        <div class="form-group">
-          <label>Code postal*</label>
-          <input required type="text" class="form-control" id="zipCode" name="zipCode" placeholder="Code postal">
-        </div>
+      <div class="col-md-3 col-sm-6">
+         <div class="form-group has-feedback">
+            <select name="sujet" class="form-control form-control1" id="subject" required>
+               <option value="">Prestation:</option>
+               <option value="Vérandas Bois">Vérandas Bois</option>
+               <option value="Vérandas Aluminium">Vérandas Aluminium</option>
+            </select>
+         </div>
       </div>
-
-      <div class="col-sm-8">
-        <label>Surface*</label>
-        <div class="form-group">
-          <select required name="surface" class="form-control">
-            <option value="">Sélectionnez une surface</option>
-            <option value="5 m²">5 m²</option>
-            <option value="10 m²">10 m²</option>
-            <option value="15 m²">15 m²</option>
-            <option value="20 m²">20 m²</option>
-            <option value="25 m²">25 m²</option>
-            <option value="30 m²">30 m²</option>
-          </select>
-        </div>
+      <div class="col-md-3 col-sm-12 text-center">
+         <button type="submit" class="button2 btn-form">
+            <span class="txt">Envoyer</span>
+         </button>
       </div>
-
-      <div class="" style="display: flex; justify-content: center; padding: 5px;">
-        <div id="contact-form-response"></div>
-        <div class="form-group d-flex justify-content-center">
-          <div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client}}">
-          </div>
-          <br />
-          <input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
-        </div>
-        </div>
-
-      <div class="col-sm-12 text-center">
-        <button type="submit" class="button">Votre estimation</button>
-      </div>
-    </div>
+   </div>
   </form>
 </div>

@@ -24,10 +24,10 @@
 #  Write an awesome description for your new site here. You can edit this
 #  line in _config.yml. It will appear in your document head meta (for
 #  Google search results) and in your feed.xml site description.
-url: "" # the subpath of your site, e.g. /blog
-# url: "https://pulsy-bh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-# baseurl: "/veranda77.fr"
-baseurl: ""
+# url: "" # the subpath of your site, e.g. /blog
+url: "https://pulsy-bh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/veranda77.fr"
+# baseurl: ""
 
 # Build settings
 plugins:
@@ -40,13 +40,13 @@ source              : ./src
 destination         : ./_site
 
 
-layouts_dir         : _layouts # Don't rename this, watch wouldn't't work
-data_dir            : _data # Don't rename this, watch wouldn't't work
-includes_dir        : _includes # Don't rename this, watch wouldn't't work
+# layouts_dir         : _layouts # Don't rename this, watch wouldn't't work
+# data_dir            : _data # Don't rename this, watch wouldn't't work
+# includes_dir        : _includes # Don't rename this, watch wouldn't't work
 
-# layouts_dir         : ./src/_layouts # Don't rename this, watch wouldn't't work
-# data_dir            : ./src/_data # Don't rename this, watch wouldn't't work
-# includes_dir        : ./src/_includes # Don't rename this, watch wouldn't't work
+layouts_dir         : ./src/_layouts # Don't rename this, watch wouldn't't work
+data_dir            : ./src/_data # Don't rename this, watch wouldn't't work
+includes_dir        : ./src/_includes # Don't rename this, watch wouldn't't work
 
 # sass:
 #   sass_dir: assets/css/_scss

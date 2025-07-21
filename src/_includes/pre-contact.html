@@ -7,49 +7,35 @@
   <input type="hidden" name="firstName" value="" />
   <input type="hidden" name="condition" value="on" />
   <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}" />
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="form-group">
-        <i class="fa fa-user-o" aria-hidden="true"></i>
-        <input required type="text" class="form-control" id="name" name="name" placeholder="Nom">
-      </div>
-    </div>
-
-    <div class="col-sm-4">
-      <div class="form-group">
-        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-        <input required type="email" class="form-control" id="email" name="email" placeholder="E-mail">
-      </div>
-    </div>
-
-    <div class="col-sm-4">
-      <div class="form-group">
-        <i class="fa fa-phone" aria-hidden="true"></i>
-        <input required type="tel" class="form-control" id="telephone" name="telephone" placeholder="Téléphone">
-      </div>
-    </div>
-
+  <div class="row home-contact">
     <div class="col-sm-12">
-      <div class="form-group">
-        <i class="fa fa-comment-o" aria-hidden="true"></i>
-        <textarea required name="message" class="form-control" rows="5" placeholder="Message"></textarea>
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control " id="lastname" name="lastname" value="" placeholder="Nom">
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control " id="email" name="email" value="" placeholder="E-mail">
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control " id="phone" name="phone" value="" placeholder="Téléphone">
+      </div>
+    </div>
+    <div class='col-sm-12'>
+      <div class="form-group has-feedback">
+        <textarea rows="6" name="message" class="form-control" id="message" placeholder='Message'></textarea>
       </div>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-lg-8 col-md-12" style="padding-left: 20px;">
-      <div id="contact-form-response"></div>
-      <div class="form-group d-flex justify-content-center">
-        <div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client}}">
-        </div>
-        <br />
-        <input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
-      </div>
-    </div>
-    <div class="col-xs-12">      
-      <br><br>
-      <button type="submit" class="btn button">Envoyer</button>
+  <div class="div01"></div>
+  <div class="row ">
+    <div class="col-xs-12 text-center">
+      <br>
+      <button type='submit' name="precontact" class="button1">
+        <span class='txt'>Envoyer</span>
+      </button>
     </div>
   </div>
 </form>

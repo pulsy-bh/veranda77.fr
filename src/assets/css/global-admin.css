@@ -15,7 +15,7 @@
 
  body.fontBody {
     padding-top: 100px;
-    background-image: url(../../img/bg-backoffice.jpg);
+    background-image: url(../img/bg-backoffice.jpg);
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@
     top: 0px;
     width: 100%;
     height: 100%;
-    background-image: url(../../img/overlay.png);
+    background-image: url(../img/overlay.png);
     opacity: 0.35;
 }
 
