@@ -1,0 +1,282 @@
+<!-- jQuery et Bootstrap en premier -->
+<script src="{{ '/assets/js/jquery-1.11.0.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/bootstrap.min.js' | relative_url }}"></script>
+
+<!-- reCAPTCHA avec callback -->
+<script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>
+
+<!-- Nos scripts personnalisés qui dépendent de jQuery -->
+<script src="{{ '/assets/js/formSubmit.js' | relative_url }}"></script>
+
+<!-- Autres bibliothèques -->
+<script src="https://use.fontawesome.com/24b7f338c4.js"></script>
+<script src="{{ '/assets/js/bootstrap-datepicker.js' | relative_url }}" type="text/javascript"></script>
+<script src="{{ '/assets/js/clockpicker.js' | relative_url }}" type="text/javascript"></script>
+<script src="{{ '/assets/js/datepicker-locales/bootstrap-datepicker.fr.js' | relative_url }}" type="text/javascript"></script>
+
+<script>
+  $('.bootstrap-datepicker input').datepicker({
+    todayBtn: "linked",
+    language: "fr",
+    autoclose: true,
+    todayHighlight: true
+  });
+</script>
+
+<script type="text/javascript">
+  $('.clockpicker').clockpicker({
+    autoclose: true
+  });
+</script>
+
+{% if page.facebook_share %}
+<div id='fb-root'></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = '//connect.facebook.net/fr_FR/all.js#xfbml=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+{% endif %}
+
+{% if page.twitter_share %}
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
+{% endif %}
+
+{% if page.google_plus_share %}
+<script type="text/javascript">window.___gcfg = {lang: 'fr'};(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/platform.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script>
+{% endif %}
+
+<script type="text/javascript" src="{{ '/assets/js/bxslider.min.js' | relative_url }}"></script>
+<script type="text/javascript" src="{{ '/assets/js/lightbox-2.6.min.js' | relative_url }}"></script>
+<script type="text/javascript">
+  if (matchMedia) {
+    var mq = window.matchMedia("(min-width: 768px)");
+    mq.addListener(WidthChange);
+    WidthChange(mq);
+  }
+
+  function WidthChange(mq) {
+    if (mq.matches) {
+      $(document).ready(function () {
+        $('.bxslider').bxSlider({
+          minSlides: 3,
+          auto: true,
+          speed: 1800,
+          pause: 5000,
+          maxSlides: 3,
+          slideWidth: 360,
+          slideMargin: 10
+        });
+      });
+    }
+  }
+</script>
+
+<script type="text/javascript">
+  $(window).scroll(function () {
+    if ($(document).scrollTop() > 40) {
+      $(".menu").animate({}, 1000);
+      $(".menu").addClass('fixmenu');
+    } else {
+      $(".menu").animate({}, 1000);
+      $(".menu").removeClass('fixmenu');
+    }
+  });
+</script>
+
+<script type="text/javascript">
+  $(window).scroll(function () {
+    if ($(document).scrollTop() > 0) {
+      $(".menu2").animate({}, 1000);
+      $(".menu2").addClass('fixmenu2');
+    } else {
+      $(".menu2").animate({}, 1000);
+      $(".menu2").removeClass('fixmenu2');
+    }
+  });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    var $lightbox = $('#lightbox');
+
+    $('[data-target="#lightbox"]').on('click', function (event) {
+      var $img = $(this).find('img'),
+        src = $img.attr('src'),
+        alt = $img.attr('alt'),
+        css = {
+          'maxWidth': $(window).width() - 100,
+          'maxHeight': $(window).height() - 100
+        };
+
+      $lightbox.find('.close').addClass('hidden');
+      $lightbox.find('img').attr('src', src);
+      $lightbox.find('img').attr('alt', alt);
+      $lightbox.find('img').css(css);
+    });
+
+    $lightbox.on('shown.bs.modal', function (e) {
+      var $img = $lightbox.find('img');
+      $lightbox.find('.modal-dialog').css({ 'width': $img.width() });
+      $lightbox.find('.close').removeClass('hidden');
+    });
+  });
+</script>
+
+<script type="text/javascript">
+  var conf_name = "{{ site.data.company.name }}";
+  var conf_email = "{{ site.data.company.email }}";
+  var modal_rgpd = '<div class="modal fade" id="modal-rgpd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">' +
+    '        <div class="modal-dialog" role="document">' +
+    '            <div class="modal-content">' +
+    '                <div class="modal-body">' +
+    '                  * En cochant cette case, j\'accepte que mes données personnelles soient collectées et traitées par le service commercial de ' + conf_name + '.' +
+    '                   Leur traitement a pour finalité de traiter votre demande spécifique.<br>' +
+    '                   Les données collectées sont conservées pour la durée de nos relations commerciales + 1 an. Conformément à la loi' +
+    '                   « informatique et libertés », vous pouvez exercer votre droit d\'accès aux données vous concernant et les faire rectifier' +
+    '                   auprès de notre référent à <a href="mailto:"' + conf_email + '">' + conf_email + '</a>.<br>' +
+    '                   Vous disposez également d\'un droit de rectification, à l\'oubli, à la portabilité, de limitation ou d\'opposition auprès de notre référent à ' +
+    '                   <a href="mailto:' + conf_email + '">' + conf_email + '</a>.<br><br>' +
+    '                   En dernier recours, vous pouvez déposer une réclamation auprès de la CNIL.' +
+    '                </div>' +
+    '                <div class="modal-footer">' +
+    '                    <div class="form-group text-center">' +
+    '                        <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Fermer</button>' +
+    '                    </div>' +
+    '                </div>' +
+    '            </div>' +
+    '        </div>' +
+    '    </div>';
+  $(document).ready(function () {
+    $(".info-rgpd label").after(function () {
+      return '&nbsp;<a href="#" data-toggle="modal" data-target="#modal-rgpd"><i class="fa fa-info-circle"></i></a>' + modal_rgpd;
+    });
+  });
+</script>
+
+{% if site.google_analytics %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics }}');
+</script>
+{% endif %}
+
+<script>
+  $(document).ready(function () {
+    let menuTimeout;
+    const menuDelay = 500;
+
+    function openMenu($menu) {
+      clearTimeout(menuTimeout);
+      $menu.addClass('open');
+      $menu.find('.mega-dropdown-menu').stop(true, true).fadeIn(300);
+    }
+
+    function closeMenu($menu) {
+      menuTimeout = setTimeout(function () {
+        $menu.find('.mega-dropdown-menu').stop(true, true).fadeOut(300);
+        $menu.removeClass('open');
+      }, menuDelay);
+    }
+
+    if (window.innerWidth > 768) {
+      $('.mega-dropdown').on('mouseenter', function () {
+        openMenu($(this));
+      }).on('mouseleave', function () {
+        const $menu = $(this);
+        closeMenu($menu);
+      });
+
+      $('.mega-dropdown-menu').on('mouseenter', function () {
+        clearTimeout(menuTimeout);
+      }).on('mouseleave', function () {
+        const $menu = $(this).closest('.mega-dropdown');
+        closeMenu($menu);
+      });
+    }
+
+    $('.dropdown-toggle').on('click', function (e) {
+      e.preventDefault();
+      const $parent = $(this).parent();
+
+      $('.mega-dropdown').not($parent).removeClass('open');
+      $('.mega-dropdown').not($parent).find('.mega-dropdown-menu').fadeOut(300);
+
+      $parent.toggleClass('open');
+      $parent.find('.mega-dropdown-menu').fadeToggle(300);
+    });
+
+    $('.mega-dropdown-menu').on('click', function (e) {
+      e.stopPropagation();
+    });
+
+    $(window).resize(function () {
+      if (window.innerWidth <= 768) {
+        $('.mega-dropdown-menu').hide();
+        $('.mega-dropdown').removeClass('open');
+      }
+    });
+  });
+</script>
+
+{% if site.recaptcha_site_key %}
+<!-- reCAPTCHA Form Handling -->
+<script>
+  function executeRecaptcha(formName, submitButton) {
+    if (typeof grecaptcha !== 'undefined') {
+      try {
+        grecaptcha.ready(function () {
+          grecaptcha.execute('{{ site.recaptcha_site_key }}', { action: formName })
+            .then(function (token) {
+              document.getElementById('g-recaptcha-response-' + formName).value = token;
+              console.log("reCAPTCHA token obtained successfully for " + formName);
+            })
+            .catch(function (error) {
+              console.error("reCAPTCHA execution error:", error);
+            });
+        });
+      } catch (error) {
+        console.error("Error in reCAPTCHA execution:", error);
+      }
+    } else {
+      console.error("grecaptcha is undefined. Make sure the reCAPTCHA script is loaded properly.");
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const forms = ['contact', 'devis', 'devis2', 'precontact'];
+    
+    forms.forEach(formName => {
+      const button = document.querySelector(`button[name="${formName}"]`);
+      if (button) {
+        executeRecaptcha(formName);
+        
+        button.addEventListener('click', function (e) {
+          if (!document.getElementById(`g-recaptcha-response-${formName}`).value) {
+            e.preventDefault();
+            executeRecaptcha(formName);
+            setTimeout(function () {
+              button.click();
+            }, 1500);
+          }
+        });
+      }
+    });
+  });
+
+  setInterval(function () {
+    const forms = ['contact', 'devis', 'devis2', 'precontact'];
+    forms.forEach(formName => {
+      if (document.querySelector(`button[name="${formName}"]`)) {
+        executeRecaptcha(formName);
+      }
+    });
+  }, 90000);
+</script>
+{% endif %}

@@ -1,0 +1,17 @@
+<div id="form-newsletter">
+  <form action="{{ page.url }}#form-newsletter" method="post">
+    <div class="col-sm-12">
+      <div class="form-group has-feedback {% if form.email.status %}{{ form.email.status }}{% endif %}">
+        <i class="fa fa-envelope-o"></i>
+        <input type="email" class="form-control" id="email" name="email" value="{{ form.email.value }}" placeholder="Email">
+        {% if form.is_submitted %}
+          <span class="fa {% if form.email.status == 'has-success' %}fa-check{% else %}fa-times{% endif %} form-control-feedback"></span>
+        {% endif %}
+      </div>
+    </div>
+  
+    <div class="col-sm-12 nopad">
+      <button type="submit" name="newsletter" class="button">Je m'inscris</button>
+    </div>
+  </form>
+</div>

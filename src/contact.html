@@ -1,0 +1,52 @@
+---
+layout: default
+permalink: /contact/
+title: "Contactez-nous pour avoir plus d'informations sur nos prestations"
+description: "Contactez-nous dès maintenant pour discuter de votre projet de véranda. Notre équipe est prête à vous accompagner et répondre à toutes vos questions !"
+---
+
+<section class="slider contact-header">
+	<div class="container">
+		<h1>Contactez-nous pour toutes informations complémentaires</h1>
+		<h2>Pour toutes informations complémentaires</h2>
+	</div>
+</section>
+<section class="infos-contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h2>Email & Téléphone</h2>
+				<p>
+					<a href="mailto:{{ site.data.company.email }}">{{ site.data.company.email }}</a>
+				</p>
+				<p>
+					<a href="tel:{{ site.data.company.phone1 }}">{{ site.data.company.phone1 }}</a>
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<h2>Réseaux sociaux</h2>
+				<ul class="social">
+					<li>
+						<a href="#" class="fa fa-facebook"></a>
+					</li>
+					<li>
+						<a href="#" class="fa fa-instagram"></a>
+					</li>
+					<li>
+						<a href="#" class="fa fa-google-plus"></a>
+					</li>
+					<li>
+						<a href="#" class="fa fa-youtube"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pre-contact">
+	<div class="container">
+		<h2 class="text-left">Contactez-nous </h2>
+		<p>Pour une demande d’information complémentaire ou une simple question, remplissez notre formulaire, un expert vous répondra dans les 48 heures ouvrées.</p>
+		{% include pre-contact.html %}
+	</div>
+</section>

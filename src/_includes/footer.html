@@ -1,0 +1,47 @@
+<footer id="form-newsletter">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="{{ '/assets/img/logoNB.png' | relative_url }}" style="width: 100%; height: 100%; object-fit: contain" alt="logo veranda">
+				<p><a href="{{ site.baseurl }}/permis-construire-veranda">Permis de construire de véranda</a></p>
+				<p><a href="{{ site.baseurl }}/isoler-veranda">Isoler véranda</a></p>
+				<p><a href="{{ site.baseurl }}/declaration-veranda-impot">Déclaration véranda impôt</a></p>
+				<p><a href="{{ site.baseurl }}/veranda-sur-escalier-exterieur">Véranda sur escalier extérieur</a></p>
+				<p><a href="{{ site.baseurl }}/pergola-77">Pergola 77</a></p>
+				<p><a href="{{ site.baseurl }}/chauffer-veranda">Chauffer véranda</a></p>
+			</div>
+			<div class="col-sm-4">
+				<a class="link-coordinates" href="https://maps.app.goo.gl/8bpmFgyXFfuPSs1TA" target="_blank">
+					<p class="title">Nos coordonnées</p>
+				</a>
+				<p>
+					Tel.
+					<a href="tel:{{ site.data.company.phone1 }}">{{ site.data.company.phone1 }}</a>
+				</p>
+				<p>
+					Email.
+					<a href="mailto:{{ site.data.company.email }}">{{ site.data.company.email }}</a>
+				</p>
+				<p>
+					Adresse
+					<a href="https://maps.app.goo.gl/8bpmFgyXFfuPSs1TA" target="_blank">
+						<span class="address">
+						2, rue du Camp Romain
+						91490, Milly La Forêt
+						</span>
+					</a>
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<p class="title">Inscrivez-vous à notre Newsletter</p>
+				{% include newsletter.html %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<p class="text-center"><a href="{{ site.baseurl }}/legales-mentions">Mentions légales</a></p>
+				<p class="text-center"><a href="{{ site.baseurl }}/politique-de-confidentialite">Politique de confidentialité</a></p>
+			</div>
+		</div>
+	</div>
+</footer>

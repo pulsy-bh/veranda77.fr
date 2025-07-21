@@ -1,0 +1,79 @@
+<nav class="">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="">
+      <li><a class="{% if page.url == '/' %}active{% endif %}" href="{{ site.baseurl }}/">Veranda 77</a></li>
+      <li>
+        <a class="{% if page.url == '/notre-entreprise/' %}active{% endif %}" href="{{ site.baseurl }}/notre-entreprise/">Notre entreprise</a>
+      </li>
+
+      <li class="dropdown mega-dropdown">
+        <a href="#" class="dropdown-toggle navtaille" data-toggle="dropdown">Nos vérandas<span class="caret"></span></a>
+        <div class="dropdown-menu mega-dropdown-menu">
+          <div class="container">
+            <div class="row">
+              <ul class="mega-menu-items">
+                <li class="mega-menu-item">
+                  <a class="{% if page.url == '/nos-verandas/' %}active{% endif %} navtaille" href="{{ site.baseurl }}/nos-verandas/#veranda-classique">
+                    <div class="menu-image-container">
+                      <img src="{{ '/assets/img/classique.jpg' | relative_url }}" alt="véranda classique" class="img-responsive">
+                      <span class="menu-item-title">Véranda classique</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="mega-menu-item">
+                  <a class="{% if page.url == '/nos-verandas/' %}active{% endif %} navtaille" href="{{ site.baseurl }}/nos-verandas/#veranda-a-toiture-plate">
+                    <div class="menu-image-container">
+                      <img src="{{ '/assets/img/toiture-plate.jpg' | relative_url }}" alt="véranda à toiture plate" class="img-responsive">
+                      <span class="menu-item-title">Véranda à toiture plate</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="mega-menu-item">
+                  <a class="{% if page.url == '/nos-verandas/' %}active{% endif %} navtaille" href="{{ site.baseurl }}/nos-verandas/#veranda-plate-avec-dome">
+                    <div class="menu-image-container">
+                      <img src="{{ '/assets/img/veranda-dome.jpg' | relative_url }}" alt="véranda plate avec dôme" class="img-responsive">
+                      <span class="menu-item-title">Véranda plate avec dôme</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="mega-menu-item">
+                  <a class="{% if page.url == '/nos-verandas/' %}active{% endif %} navtaille" href="{{ site.baseurl }}/nos-verandas/#veranda-plate-a-toiture-aretier">
+                    <div class="menu-image-container">
+                      <img src="{{ '/assets/img/toiture-aretier.jpg' | relative_url }}" alt="véranda plate à toiture arêtier" class="img-responsive">
+                      <span class="menu-item-title">Véranda à toiture plate arêtier</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="mega-menu-item">
+                  <a class="{% if page.url == '/nos-verandas/' %}active{% endif %} navtaille" href="{{ site.baseurl }}/nos-verandas/#veranda-en-pan-coupe">
+                    <div class="menu-image-container">
+                      <img src="{{ '/assets/img/veranda-pan-coupe.jpg' | relative_url }}" alt="véranda en pan coupé" class="img-responsive">
+                      <span class="menu-item-title">Véranda en pan coupé</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a class="{% if page.url == '/nos-realisations/' %}active{% endif %}" href="{{ site.baseurl }}/nos-realisations/">Nos réalisations</a>
+      </li>
+      <li>
+        <a class="{% if page.url == '/contact/' %}active{% endif %}" href="{{ site.baseurl }}/contact/">Contact</a>
+      </li>
+      <li class="devis">
+        <a class="{% if page.url == '/devis/' %}active{% endif %}" href="{{ site.baseurl }}/devis/">Devis en ligne</a>
+      </li>
+    </ul>
+  </div>
+</nav>

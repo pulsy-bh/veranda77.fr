@@ -1,0 +1,205 @@
+//CSS Customer
+
+/* HACK ROBOT FORMULAIRE */
+input[name="interested"] {display: none;}//Checkbox form commentaires des actualités
+#contact,#devis,#cart{//Input form de contact et devis
+	.pseudoForm{
+		display: none;
+	}
+}
+
+img.pull-left{
+	margin: 0 @padding-base-vertical @padding-base-vertical 0;
+}
+img.pull-right{
+	margin: 0 0 @padding-base-vertical @padding-base-vertical;
+}
+
+//HEADER
+@logo-width : 150px;
+@logo-height : 150px;
+header {
+	margin-bottom: @line-height-computed;
+	#headerTop{
+		padding: 5px 0;
+		background: @gray-dark;
+		color:@gray-light;
+		#phone,#email{
+			display: inline-block;
+		}
+		#phone{
+			color:@brand-primary;
+			margin-right: 10px;
+		}
+		#email{
+			margin-left: 10px;
+			a{
+				color:@gray-light;
+			}
+		}
+	}
+	#headerMiddle{
+		overflow: visible;
+		height:@logo-height;
+	}
+	#logo{
+		.pull-left();
+		width:@logo-width;
+	}
+	#navbar{
+		margin-left: @logo-width;
+		padding-top: (@logo-height - @navbar-height)/2;
+		.navbar{
+			height: @navbar-height;
+		}
+	}
+	#carousel-header{
+		margin-top: @line-height-computed;
+	}
+}
+
+footer{
+	.well();
+	#bhinternet{
+		padding: 15px 0;
+		text-align: center;
+		font-size: .9em;
+		color:@gray-light;
+		a{
+			color:@gray-light;
+			&:hover{
+				color:@gray-darker;
+				span{
+					color:@brand-primary;
+				}
+			}
+		}
+	}
+}
+
+#page{
+	margin-bottom: @line-height-computed;
+	section{
+		overflow: hidden;
+		margin-bottom: 50px;
+	}
+}
+
+.table.no-border td{
+	border:none;
+}
+
+//BLOC ASIDE
+#aside{
+	.well();
+}
+
+//SOCIAL NETWORK
+#social{
+	.facebook{
+
+	}
+	.twitter{
+		margin-top: 9px; 
+	}
+	.googleplus{
+		margin-top: 5px; 
+	}
+}
+
+//CUSTOSMER REFERENCES
+#references{
+	.well();
+	img{
+		.img-responsive();
+		margin:auto;
+	}
+}
+
+//CALL TO ACTION
+#callToAction{
+	.well();
+	text-align: center;
+}
+
+//BREADCRUMBS
+#breadcrumbs{
+
+}
+
+/*----- ----- -----*/
+/*----- PAGES -----*/
+/*----- ----- -----*/
+#gallery{
+	.thumbnail{
+		height:100px;
+		overflow: hidden;
+		span{
+			display: block;
+			position: absolute;
+			padding: 5px;
+			color: #fff;
+			width:150px;
+		}
+	}
+}
+
+#news{
+	a.thumbnail{
+		color:@text-color;
+		&:hover{
+			text-decoration: none;
+			.read-more{
+				color:@link-color;
+			}
+		}
+	}
+}
+
+#contact{
+	address{
+		text-align: center;
+		strong{
+			font-size: 1.6em;
+		}
+		div{
+			margin:5px 0;
+		}
+		span{
+			color:@gray-light;
+			font-style: italic;
+		}
+	}
+}
+
+#mentions-legales{
+	h2{
+		margin-top: 0;
+	}
+	.panel{
+		font-size: 1.1em;
+	}
+}
+
+#product{
+	.info{
+		float: right;
+		width: 25%;
+		margin: 0 0 20px 20px;
+		padding: @padding-small-vertical @padding-small-horizontal;
+		background: #f5f5f5;
+		.thumbnail{
+			margin-bottom: 0;
+		}
+		.little{
+			width: 50px;
+			float: left;
+		}
+	}
+}
+
+#cart{
+	input[type="number"]{
+		width: 40px;
+	}
+}

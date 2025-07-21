@@ -1,0 +1,128 @@
+---
+layout: default
+permalink: /devis/
+title: "Notre formulaire de devis gratuit disponible en ligne"
+description: "Nous pouvons vous faire une estimation du coût de nos prestations pour vos vérandas et pergolas, il suffit de remplir notre formulaire de devis en ligne !"
+---
+
+<section class="slider contact-header">
+	<div class="container">
+		<h1>Devis</h1>
+	</div>
+</section>
+
+<section class="devis">
+	<div id="devis">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<form  id="devisForm" method="post" action="{{ site.data.company.url.notify }}">
+						<input type="hidden" name="lang" value="fr" />
+						<input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
+						<input type="hidden" name="type" value="devis" />
+						<input type="hidden" name="website" value="{{ site.data.company.website }}" />
+						<input type="hidden" name="lang" value="{{ site.data.company.lang }}" />
+						<input type="hidden" name="firstName" value="" />
+						<input type="hidden" name="condition" value="on" />
+						<input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}" />
+						<div class="row">
+							<div class="col-sm-5">
+								<fieldset>
+									<legend>Coordonnées</legend>
+
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="lastName">Prénom*</label>
+												<input required type="text" class="form-control" id="lastName" name="lastName">
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="name">Nom*</label>
+												<input required type="text" class="form-control" id="name" name="name">
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<label for="address">Adresse</label>
+												<input type="text" class="form-control" id="address" name="address">
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-5">
+											<div class="form-group">
+												<label for="zipCode">Code postal*</label>
+												<input required type="text" class="form-control" id="zipCode" name="zipCode">
+											</div>
+										</div>
+										<div class="col-sm-7">
+											<div class="form-group">
+												<label for="city">Ville</label>
+												<input type="text" class="form-control" id="city" name="city">
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<label for="email">E-mail*</label>
+												<input required type="email" class="form-control" id="email" name="email">
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<label for="telephone">Téléphone*</label>
+												<input required type="tel" class="form-control" id="telephone" name="telephone">
+											</div>
+										</div>
+									</div>
+								</fieldset>
+							</div>
+
+							<div class="col-sm-6 col-sm-offset-1">
+								<fieldset>
+									<legend>Demande</legend>
+									<div class="form-group">
+										<label for="surface">Surface approximative*</label>
+										<select required name="surface" class="form-control" id="surface">
+											<option value="">---</option>
+											<option value="Inférieur à 20m²">Inférieur à 20m²</option>
+											<option value="De 20 à 30m²">De 20 à 30m²</option>
+											<option value="Supérieur à 30m²">Supérieur à 30m²</option>
+										</select>
+									</div>
+								</fieldset>
+								<div class="form-group">
+									<label for="message">Message</label>
+									<textarea rows="14" name="message" class="form-control" id="message"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12" style="padding-left: 20px;">
+							<div id="contact-form-response"></div>
+							<div class="form-group d-flex justify-content-center">
+							  <div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client}}">
+							  </div>
+							  <br />
+							  <input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
+							</div>
+						  </div>
+						<div class="buttondevis text-center">
+							<button type="submit" class="button">Envoyer</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

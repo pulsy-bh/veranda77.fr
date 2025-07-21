@@ -1,0 +1,81 @@
+<header class="{% if page.url == '/' %}home{% else %}pp{% endif %}">
+    <div class="fixphone">
+        <a href="tel:{{ site.data.company.phone1 }}"><i class="fa fa-phone" aria-hidden="true"></i> {{ site.data.company.call_phone1 }}</a>
+    </div>
+    {% if page.url == '/' %}
+        <div class="menu">
+            <div class="logo">
+                <a href="{{ site.baseurl }}/"><img src="{{ '/assets/img/logoNB.png' | relative_url }}" class="img-responsive" alt="Logo Baies et Vérandas"></a>
+            </div>
+            {% include navbar.html %}
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="left-col">
+                        <div class="logo">
+                            <a href="{{ site.baseurl }}/"><img src="{{ '/assets/img/logoNB.png' | relative_url }}" class="img-responsive" alt="Logo Baies et Vérandas"></a>
+                        </div>
+                        <style>
+                            .logo-certif {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 10px;
+                                margin-top: 30px;
+                            }
+                        </style>
+                        <div class="logo-certif">
+                            <img src="{{ '/assets/img/logo-veranda2.jpg' | relative_url }}" style="width: 140px;" class="img-responsive" alt="Certification menuisier" />
+                        </div>
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="fa fa-facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fa fa-instagram"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fa fa-google-plus"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fa fa-youtube"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="middle">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h1>Les experts de la véranda dans le 77 : Baies & Verandas Seine-et-Marne</h1>
+                                <h2>Un devis simple et entièrement gratuit, remplissez notre formulaire </h2>
+                                {% include pre-devis.html %}
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="image img2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <div class="menu2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="logo">
+                            <a href="{{ site.baseurl }}/"><img src="{{ '/assets/img/logoRN.png' | relative_url }}" class="img-responsive" alt="Logo Baies et Vérandas"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-10">
+                        {% include navbar.html %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+</header> 

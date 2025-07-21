@@ -1,0 +1,119 @@
+routes:
+  home: ""
+  prestations: prestations
+  prestation1: prestation-1
+  prestation2: prestation-2
+  contact: contact
+  contact-success: contact-success
+  devis: devis
+  devis-success: devis-success
+  gallery: galerie
+  albums: albums
+  album: album
+  opinion: avis
+  news: actualites
+  news-single: actualite
+  products: produits
+  product: produit
+  cart: panier
+  payment: paiement
+  partners: partenaires
+  terms-conditions: cgv
+  legales-mentions: mentions-legales
+  politique-de-confidentialite: politique-de-confidentialite
+  pageNew: pageContent222
+  newsletter-success: newsletter-success
+  entreprise: entreprise
+  nos-savoir-faire: nos-savoir-faire
+  qui-sommes-nous: qui-sommes-nous
+  pages-profondes: pages-profondes
+  notre-entreprise: notre-entreprise
+  veranda-moderne: veranda-moderne
+  veranda-classique: veranda-classique
+  pergolas-bioclimatique: pergolas-bioclimatique
+  nos-realisations: nos-realisations
+  veranda-fontainebleau: veranda-fontainebleau
+  veranda-bois: veranda-bois
+  veranda-aluminium: veranda-aluminium
+  permis-construire-veranda: permis-construire-veranda
+  isoler-veranda: isoler-veranda
+  declaration-veranda-impot: declaration-veranda-impot
+  pergola-77: pergola-77
+  veranda-sur-escalier-exterieur: veranda-sur-escalier-exterieur
+  nos-verandas: nos-verandas
+
+metas:
+  nos-realisations:
+    title: "Découvrez nos realisations à travers nos créations en photos"
+    description: "Venez voir à quoi ressemble nos créations de vérandas et de pergolas en seine et marne, n'hésitez pas à faire un tour sur notre rubrique de réalisations."
+    keywords: "nos réalisations"
+  pergolas-bioclimatique:
+    title: "Nous possédons des gammes de pergolas bioclimatiques de qualité"
+    description: "Toutes nos pergolas sont bioclimatiques chez Baies & vérandas ! Elles sont un concentré de nouvelles technologies qui sauront répondre à toutes vos attentes."
+    keywords: "pergolas bioclimatique"
+  veranda-moderne:
+    title: "Venez découvrir notre nouvelle gamme de vérandas modernes"
+    description: "Notre société de vérandas et pergolas dans le 77 vous propose sa nouvelle gamme de vérandas modernes à des prix abordables tout en vous garantissant une qualité exceptionnelle et un savoir-faire inégalable pour un design épuré et une véranda facile d'entretien. Venez profiter de nos nombreuses promotions"
+    keywords: "véranda moderne"
+  veranda-classique:
+    title: "Véranda classique adaptée à vos besoins ? Faites nous confiance !"
+    description: "Basé dans le 77, Baies & vérandas vous propose sa gamme de vérandas classiques qui sauront répondre à toutes vos exigences et aux normes de sécurité !"
+    keywords: "véranda classique"
+  notre-entreprise:
+    title: "Notre entreprise, Baies et Vérandas, est à votre disposition afin de vous délivrer des prestations de qualités en matière de vérandas et de pergolas !"
+    description: "Baies et Vérandas est à votre disposition afin de vous délivrer des prestations de qualités en matière de vérandas et de pergolas. Satisfaction à 100% !"
+    keywords: "Baies et Vérandas"
+  home:
+    title: "Veranda 77 - Seine-et-Marne | Baies & Verandas"
+    description: "Nous vous proposons un service d'installation de véranda dans le 77 et de pergola de qualité à des prix concurrentiels. Obtenez un devis gratuit en ligne"
+    keywords: "véranda 77"
+  contact:
+    title: "Contactez-nous pour avoir plus d'informations sur nos prestations"
+    description: "Contactez-nous dès maintenant pour discuter de votre projet de véranda. Notre équipe est prête à vous accompagner et répondre à toutes vos questions !"
+    keywords: "contact"
+  devis:
+    title: "Notre formulaire de devis gratuit disponible en ligne"
+    description: "Nous pouvons vous faire une estimation du coût de nos prestations pour vos vérandas et pergolas, il suffit de remplir notre formulaire de devis en ligne !"
+    keywords: "devis"
+  veranda-fontainebleau:
+    title: "Contactez Véranda Fontainebleau pour une véranda unique sur mesure !"
+    description: "Obtenez la véranda de vos rêves en faisant appel à l'équipe des vérandas Fontainebleau. Demandez votre devis en ligne gratuitement chez Baies et vérandas."
+    keywords: "véranda fontainebleau"
+  veranda-bois:
+    title: "Véranda en Bois Moderne | Modèle, Photo, Infos & Prix"
+    description: "La véranda en bois : alliant confort intérieur, charme naturel et résilience. L'alliance parfaite d'élégance, d'isolation et de longévité. Cliquez ici !"
+    keywords: "véranda bois"
+  veranda-aluminium:
+    title: "Fabricant Véranda aluminium Sur Mesure | Infos & Prix"
+    description: "La véranda en aluminium : mariage parfait entre confort intérieur et beauté de la nature. Esthétiquement séduisant, robuste et durable. Cliquez ici !"
+    keywords: "véranda aluminium"
+  permis-construire-veranda:
+    title: "Faut-il un Permis de Construire pour une Véranda"
+    description: "Construire une véranda nécessite de connaître les règles de permis de construire et déclaration préalable. Cet article guide à travers les démarches."
+  isoler-veranda:
+    title: "Meilleures astuces pour bien isoler votre véranda"
+    description: "Optimisez l'isolation de votre véranda : techniques et matériaux pour confort et économie d'énergie. Réduisez les déperditions thermiques efficacement."
+  declaration-veranda-impot:
+    title: "Déclarer une Veranda aux impots : Ce qu'il faut faire"
+    description: "Découvrez les obligations fiscales essentielles liées à la construction d'une véranda: déclaration aux impôts, impact sur taxes et aides disponibles."
+  nos-verandas:
+    title: "Vous rêvez d'un espace unique ? Choisissez-nous pour votre véranda"
+    description: "Osez enfin faire construire la veranda dont vous avez toujours rêvé! Nous proposons des verandas sur mesure, adaptées à l'environnement de votre habitation."
+    keywords: "nos vérandas"
+
+breadcrumbs:
+  prestation1:
+    name: "Prestations"
+    url: "prestations"
+  prestation2:
+    name: "Prestations"
+    url: "prestations"
+  news-single:
+    name: "Actualités"
+    url: "prestations"
+  album:
+    name: "Albums"
+    url: "albums"
+  product:
+    name: "Produits"
+    url: "products"
